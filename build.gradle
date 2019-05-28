@@ -1,0 +1,32 @@
+plugins {
+    id 'java'
+}
+
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile group: 'com.google.guava', name: 'guava', version: '14.0.1'
+    compile group: 'org.apache.httpcomponents', name: 'httpclient', version: '4.3.1'
+    compile group: 'com.fasterxml.jackson.core', name: 'jackson-annotations', version: jacksonVersion
+    compile group: 'com.fasterxml.jackson.core', name: 'jackson-core', version: jacksonVersion
+    compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: jacksonVersion
+    compile group: 'org.glassfish.hk2.external', name: 'javax.inject', version: glassfishVersion
+    compile group: 'org.glassfish.hk2', name: 'hk2-utils', version: glassfishVersion
+    compile group: 'org.glassfish.hk2', name: 'hk2-locator', version: glassfishVersion
+    compile group: 'javax.ws.rs', name: 'javax.ws.rs-api', version: '2.0'
+    compile group: 'org.glassfish.jersey.core', name: 'jersey-client', version: '2.3.1'
+    compile group: 'joda-time', name: 'joda-time', version: '2.3'
+    compile group: 'log4j', name: 'log4j', version: '1.2.17'
+
+    testCompile "com.openpojo:openpojo:0.8.6"
+    testCompile 'junit:junit:4.12',
+            'org.powermock:powermock-core:1.6.1',
+            'org.powermock:powermock-module-junit4:1.6.1',
+            'org.powermock:powermock-api-mockito:1.6.1'
+}

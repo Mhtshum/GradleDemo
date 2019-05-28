@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="PersonTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-05-22T11:17:38" hostname="aline-fire" time="20.947">
+  <properties/>
+  <testcase name="personIsAdult" classname="PersonTest" time="20.947"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
